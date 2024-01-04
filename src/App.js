@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import Todo from './Components/Todo/Todo';
+import Stopwatch from './Components/Stopwatch/Stopwatch';
+import NumbersCount from './Components/NumbersCount/NumbersCount';
+import TicTacToe from './Components/TicTacToe/TicTacToe';
+import PomodoroTimer from './Components/PomorodoTimer/PomorodoTimer';
+import ErrorPage from './ErrorPage';
+import Header from './Header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <Routes>
+      <Route path="" element={<Home />} />
+      <Route path="/todo" element={<Todo />} />
+      <Route path="/stopwatch" element={<Stopwatch />} />
+      <Route path="/numberscount" element={<NumbersCount />} />
+      <Route path="/tictactoe" element={<TicTacToe />} />
+      <Route path="/pomorodotimer" element={<PomodoroTimer />} />
+      <Route path="*" element={<ErrorPage />} />
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }

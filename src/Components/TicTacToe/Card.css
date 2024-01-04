@@ -1,0 +1,85 @@
+/* .card1{
+    margin: 10px;
+    background-color: white;
+    border-radius: 13px;
+    height: 110px;
+    width: 110px;
+    box-shadow: 3px 6px 18px rgb(228, 228, 228);
+    border: rgb(235, 235, 235);
+    text-align: center;
+    justify-content: center;
+    font-size: 26px;
+    color: skyblue;
+}
+
+.redSign{
+    font-weight: 200;
+}
+
+.blueSign{
+    font-weight: 200;
+}
+
+/* .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    background-color: #ddd;
+  }
+  
+  .blueSign,
+  .redSign {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .redSign {
+    color: #e74c3c;
+  }
+  
+  .blueSign {
+    color: #3498db;
+  } */ 
+
+
+
+
+  .game-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+  }
+  
+  .game-box:hover {
+    background-color: #ddd;
+  }
+  
+  .x-sign,
+  .o-sign {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .o-sign {
+    color: #e74c3c;
+  }
+  
+  .x-sign {
+    color: #3498db;
+  }

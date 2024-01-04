@@ -1,0 +1,89 @@
+.stopwatch {
+    text-align: center;
+    /* margin: 50px auto;
+    max-width: 400px; */
+
+    /* applying fo header */
+    position: relative;
+    top: 90px;
+  }
+  
+  .timer {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .controls button {
+    font-size: 1.5em;
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .laps {
+    margin-top: 20px;
+  }
+  
+  .laps ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .laps li {
+    font-size: 1.2em;
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Add transitions for smoother animations */
+  .timer,
+  .controls button,
+  .laps li {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* Add these styles to your existing CSS or create a new one */
+.laps table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.laps table, .laps th, .laps td {
+  border: 1px solid #ddd;
+}
+
+.laps th, .laps td {
+  padding: 10px;
+  text-align: center;
+}
+
+.laps th {
+  background-color: #f2f2f2;
+}
+
+.laps td span {
+  display: block;
+  color: #888;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.laps table {
+  animation: fadeIn 0.5s ease-out;
+}

@@ -1,0 +1,187 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.overalldiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  top: 90px;
+}
+
+/* .card {
+    width: 252px;
+    height: 265px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #ffffff;
+    transition: 0.2s ease-in-out;
+  } */
+
+.card {
+  width: 252px;
+  height: 265px;
+  margin: 20px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  transition: 0.2s ease-in-out;
+}
+  
+  .img {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(#e66465, #9198e5);
+    display: flex;
+    align-items: top;
+    justify-content: right;
+  }
+  
+  .save {
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+  }
+  
+  .save .svg {
+    transition: 0.2s ease-in-out;
+    width: 15px;
+    height: 15px;
+  }
+  
+  .icon-box {
+    margin-top: 15px;
+    width: 70%;
+    padding: 10px;
+    background-color: #e3fff9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  .icon-box svg {
+    width: 17px;
+  }
+  
+  .text .h3 {
+    font-family: 'Lucida Sans' sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .text .p {
+    font-family: 'Lucida Sans' sans-serif;
+    color: #999999;
+    font-size: 13px;
+  }
+  
+  .icon-box .span {
+    margin-left: 10px;
+    font-family: 'Lucida Sans' sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #9198e5;
+  }
+  
+  .card:hover {
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .save:hover {
+    transform: scale(1.1) rotate(10deg);
+  }
+  
+  .save:hover .svg {
+    fill: #ced8de;
+  }
+
+
+
+  /* Install Button css */
+  .install-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10rem;
+    transition: all 0.02s;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+    z-index: 0;
+    box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+    bottom: -10px;
+  }
+  
+  .install-button:hover {
+    background: rgb(193, 228, 248);
+    color: rgb(33, 0, 85);
+  }
+  
+  .install-button:active {
+    transform: scale(0.97);
+  }
+  
+  .hoverEffect {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .hoverEffect div {
+    background: rgb(222,0,75);
+    background: linear-gradient(#e66465, #9198e5);
+    border-radius: 40rem;
+    width: 10rem;
+    height: 10rem;
+    transition: 0.4s;
+    filter: blur(20px);
+    animation: effect infinite 3s linear;
+    opacity: 0.5;
+  }
+  
+  .install-button:hover .hoverEffect div {
+    width: 8rem;
+    height: 8rem;
+  }
+  
+  @keyframes effect {
+  
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }

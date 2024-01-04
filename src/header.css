@@ -1,0 +1,50 @@
+/* Header.css */
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 15px 20px;
+    z-index: 1000;
+    background-color: #767cc6;
+    color: white;
+    padding: 15px 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .react-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .react-li {
+    margin-right: 20px;
+  }
+
+  .links-in-navbar {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+    display: flex;
+  }
+  
+  .links-in-navbar:hover {
+    color: #61DBFB;
+  }
+
+  .heading-react{
+    color: #61DBFB;
+  }
+  
