@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import '../Stopwatch/Stopwatch.css';
 import watchSound from '../Sound/clock-time-sound.mp3';
 import Header from '../../Header';
@@ -8,8 +8,12 @@ const Stopwatch = () => {
   const [isRunning, setIsRunning] = useState(false);
   const [laps, setLaps] = useState([]);
 
-  const watchSoundMain = new Audio(watchSound);
-  watchSoundMain.volume = 1.0;
+// Use useMemo to memoize the creation of watchSoundMain
+const watchSoundMain = useMemo(() => {
+  const audio = new Audio(watchSound);
+  audio.volume = 1.0;
+  return audio;
+}, []);
 
   useEffect(() => {
     let interval;
@@ -34,7 +38,7 @@ const Stopwatch = () => {
       clearInterval(interval);
       watchSoundMain.removeEventListener('ended', handleAudioEnded);
     }
-  }, [isRunning], watchSoundMain);
+  }, [isRunning, watchSoundMain]);
 
   const startStop = () => {
     setIsRunning(!isRunning);

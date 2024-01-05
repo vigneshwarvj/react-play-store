@@ -76,13 +76,13 @@
     text-decoration: line-through;
     color: #6c757d;
     display: flex;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .todo li.incompleted{
     color: #6c757d;
     display: flex;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .todo li .task-desc {

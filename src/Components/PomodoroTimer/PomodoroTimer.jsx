@@ -1,5 +1,5 @@
 // Pomodoro timer (pause, start, increment, decrement of break time & productivity time) in react with function.
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import './PomodoroTimer.css';
 import alarmSound from '../Sound/alert-alarm.mp3.mp3';
 
@@ -11,8 +11,12 @@ function PomodoroTimer(){
   const [timer, setTimer] = useState(productivityTime * 60);
   const [isActive, setIsActive] = useState(false);
 
-  const alarmSoundMain = new Audio(alarmSound);
-  alarmSoundMain.volume = 0.5;
+  // Use useMemo to memoize the creation of watchSoundMain
+  const alarmSoundMain = useMemo(() => {
+  const audio = new Audio(alarmSound);
+  audio.volume = 1.0;
+  return audio;
+  }, []);
 
   // Function to start or pause the timer
   const toggleTimer = () => {
