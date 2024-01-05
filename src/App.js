@@ -7,7 +7,6 @@ import NumbersCount from './Components/NumbersCount/NumbersCount';
 import TicTacToe from './Components/TicTacToe/TicTacToe';
 import PomodoroTimer from './Components/PomorodoTimer/PomorodoTimer';
 import ErrorPage from './ErrorPage';
-import Header from './Header';
 
 function App() {
   return (

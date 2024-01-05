@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import './PomorodoTimer.css';
 import alarmSound from '../Sound/alert-alarm.mp3.mp3';
-import { Link } from 'react-router-dom';
 
 function PomodoroTimer(){
   const [breakTime, setBreakTime] = useState(5);
