@@ -34,7 +34,7 @@ const Stopwatch = () => {
       clearInterval(interval);
       watchSoundMain.removeEventListener('ended', handleAudioEnded);
     }
-  }, [isRunning]);
+  }, [isRunning], watchSoundMain);
 
   const startStop = () => {
     setIsRunning(!isRunning);

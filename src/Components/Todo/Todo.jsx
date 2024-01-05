@@ -18,10 +18,10 @@ function Todo(){
         }, 3000);
     };
 
-    const handleAddTask = (task) => {
-        setTodos([...todos, { id: Date.now(), ...task, completed: false }]);
-        showAlert('Task added successfully!');
-    };
+    // const handleAddTask = (task) => {
+    //     setTodos([...todos, { id: Date.now(), ...task, completed: false }]);
+    //     showAlert('Task added successfully!');
+    // };
 
     const handleSubmit = (e) => {
         e.preventDefault();

@@ -8,7 +8,7 @@ const cardData = [
     { id: 2, to: "/todo", title: "Todo 📝", description: "Manage your tasks!" },
     { id: 3, to: "/stopwatch", title: "Stopwatch ⏱️", description: "Track your time!" },
     { id: 4, to: "/tictactoe", title: "Tic Tac Toe ❌⭕", description: "Let's Relax by playing XO!"},
-    { id: 5, to: "/pomorodotimer", title: "Pomorodo Timer ⏲️", description: "Take work and break!"}
+    { id: 5, to: "/pomodorotimer", title: "Pomodoro Timer ⏲️", description: "Take work and break!"}
   ];
 
 export default function Home(){

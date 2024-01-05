@@ -5,7 +5,7 @@ import Todo from './Components/Todo/Todo';
 import Stopwatch from './Components/Stopwatch/Stopwatch';
 import NumbersCount from './Components/NumbersCount/NumbersCount';
 import TicTacToe from './Components/TicTacToe/TicTacToe';
-import PomodoroTimer from './Components/PomorodoTimer/PomorodoTimer';
+import PomodoroTimer from './Components/PomodoroTimer/PomodoroTimer';
 import ErrorPage from './ErrorPage';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <Route path="/stopwatch" element={<Stopwatch />} />
       <Route path="/numberscount" element={<NumbersCount />} />
       <Route path="/tictactoe" element={<TicTacToe />} />
-      <Route path="/pomorodotimer" element={<PomodoroTimer />} />
+      <Route path="/pomodorotimer" element={<PomodoroTimer />} />
       <Route path="*" element={<ErrorPage />} />
       </Routes>
       </BrowserRouter>

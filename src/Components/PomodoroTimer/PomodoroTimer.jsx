@@ -1,6 +1,6 @@
 // Pomodoro timer (pause, start, increment, decrement of break time & productivity time) in react with function.
 import React, { useState, useEffect } from 'react';
-import './PomorodoTimer.css';
+import './PomodoroTimer.css';
 import alarmSound from '../Sound/alert-alarm.mp3.mp3';
 
 function PomodoroTimer(){
@@ -59,7 +59,7 @@ function PomodoroTimer(){
     }
 
     return () => clearInterval(interval);
-  }, [isActive, timer, breakTime, productivityTime]);
+  }, [isActive, timer, breakTime, productivityTime, alarmSoundMain]);
 
   // Format seconds into MM:SS
   const formatTime = (seconds) => {
